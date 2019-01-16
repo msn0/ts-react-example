@@ -1,8 +1,12 @@
 import * as React from 'react';
 import { render } from 'react-dom';
-import Badge from './components/badge/badge';
+import BadgeFunctional from './components/badge-functional/badge-functional';
+import BadgePure from './components/badge-pure/badge-pure';
 
-render(<Badge num={ 135 }/>, document.body);
+render([
+    <BadgeFunctional num={ 135 }/>,
+    <BadgePure num={ 1 }/>
+], document.body);
 
 if (module.hot) {
     module.hot.accept();

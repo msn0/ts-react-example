@@ -1,5 +1,5 @@
 module.exports = {
-    main: './badge.tsx',
+    main: './badge-functional.tsx',
     presets: [
         {
             name: 'no message',
