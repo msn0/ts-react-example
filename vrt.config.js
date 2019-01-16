@@ -5,11 +5,6 @@ module.exports = {
     webpack: {
         loaders: [
             {
-                test: /\.js$/,
-                include: [ path.resolve(__dirname, 'src/') ],
-                use: [ Loaders.babel ]
-            },
-            {
                 test: /\.tsx?$/,
                 include: [ path.resolve(__dirname, 'src/') ],
                 use: [ Loaders.typescript ]
