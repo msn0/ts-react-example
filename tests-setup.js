@@ -2,8 +2,12 @@ import jsdom from 'jsdom';
 import hook from 'css-modules-require-hook';
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+import { expect, should } from 'chai';
+import chai from 'chai';
 
 configure({ adapter: new Adapter() });
+
+chai.use(require('chai-subset'));
 
 hook({
     extensions: ['.pcss'],
@@ -25,3 +29,5 @@ hook({
 const { window } = new jsdom.JSDOM(``);
 global.window = window;
 global.document = window.document;
+global.should = should();
+global.expect = expect;

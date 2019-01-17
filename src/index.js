@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import BadgeFunctionalTs from './components/badge-functional-ts/badge-functional';
 import BadgeFunctionalJs from './components/badge-functional-js/badge-functional';
-import BadgePure from './components/badge-pure/badge-pure';
+import BadgePure from './components/badge-pure-ts/badge-pure';
 
 render((
     <React.Fragment>
