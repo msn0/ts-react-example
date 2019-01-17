@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { render } from 'react-dom';
 import BadgeFunctionalTs from './components/badge-functional-ts/badge-functional';
 import BadgeFunctionalJs from './components/badge-functional-js/badge-functional';

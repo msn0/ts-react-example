@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require ts-node/register --require @babel/register --require ./tests-setup.js src/**/__tests__/*.js src/**/__tests__/*.tsx"
+    "test": "mocha --require ts-node/register --require @babel/register --require ./tests-setup.js src/**/__tests__/*.js src/**/__tests__/*.tsx",
+    "build": "webpack -p",
+    "dev": "webpack-dev-server --port 8081"
   },
   "author": "",
   "license": "ISC",
