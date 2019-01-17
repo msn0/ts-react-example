@@ -1,12 +1,16 @@
 import * as React from 'react';
 import { render } from 'react-dom';
-import BadgeFunctional from './components/badge-functional/badge-functional';
+import BadgeFunctionalTs from './components/badge-functional-ts/badge-functional';
+import BadgeFunctionalJs from './components/badge-functional-js/badge-functional';
 import BadgePure from './components/badge-pure/badge-pure';
 
 render((
     <React.Fragment>
         <p>
-            <BadgeFunctional num={135} />
+            <BadgeFunctionalTs num={135} />
+        </p>
+        <p>
+            <BadgeFunctionalJs num={2} />
         </p>
         <p>
             <BadgePure num={1} />

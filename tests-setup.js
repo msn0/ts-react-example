@@ -9,7 +9,7 @@ hook({
     extensions: ['.pcss'],
     generateScopedName: '[local]',
     prepend: [
-        require('postcss-import'),
+        require('postcss-import-sync2'),
         require('postcss-at-rules-variables'),
         require('postcss-mixins'),
         require('postcss-modular-scale-plus'),
