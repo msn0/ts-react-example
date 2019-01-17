@@ -2,8 +2,10 @@ import * as React from 'react';
 import { shallow } from 'enzyme';
 import BadgeFunctional from '../badge-functional';
 
-describe('Functional Badge', () => {
+describe('Functional Badge TS', () => {
     it('should render message', () => {
-        const badge = shallow(<BadgeFunctional num={ 1 } />);
+        const wrapper = shallow(<BadgeFunctional num={ 1 } />);
+
+        const text = wrapper.text() as any;
     });
 });
