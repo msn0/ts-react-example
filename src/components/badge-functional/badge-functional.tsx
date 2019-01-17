@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as styles from './styles.pcss';
 
-export default function Badge ({ num = 0 }: { num?: number }): JSX.Element {
+export default function BadgeFunctional ({ num = 0 }: { num?: number }): JSX.Element {
     const message: string = 'new message';
 
     return (
