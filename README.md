@@ -1,6 +1,6 @@
 # ts-react-example
 
-## Whats included?
+## What's included?
 
 * TypeScript mixed with javascript (ES6)
 * JSX in TS (.tsx)
