@@ -6,6 +6,6 @@ describe('Functional Badge TS', () => {
     it('should render message', () => {
         shallow(<BadgeFunctional num={ 1 } />)
             .text().should
-            .equal('1new message')
+            .equal('1new message');
     });
 });

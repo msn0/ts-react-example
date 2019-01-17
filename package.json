@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require ts-node/register --require @babel/register --require ./tests-setup.js src/**/__tests__/*.js src/**/__tests__/*.tsx",
+    "test": "npm run unit && npm run lint",
+    "unit": "mocha --require ts-node/register --require @babel/register --require ./tests-setup.js src/**/__tests__/*.js src/**/__tests__/*.tsx",
+    "lint": "eslint --fix src/**/*.tsx src/**/*.js",
     "build": "webpack -p",
     "dev": "webpack-dev-server --port 8081"
   },
@@ -40,6 +42,10 @@
     "cssnano": "^4.1.8",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
+    "eslint": "^5.12.0",
+    "eslint-config-helmut": "^3.0.0",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-typescript": "^0.14.0",
     "extract-css-chunks-webpack-plugin": "^3.3.2",
     "html-webpack-plugin": "^3.2.0",
     "jsdom": "^13.1.0",
@@ -60,7 +66,8 @@
     "ts-mocha": "^2.0.0",
     "ts-node": "^7.0.1",
     "typed-css-modules-loader": "0.0.17",
-    "typescript": "^3.2.2",
+    "typescript": "^3.2.1",
+    "typescript-eslint-parser": "^21.0.2",
     "typings-for-css-modules-loader": "^1.7.0",
     "webpack": "^4.28.4",
     "webpack-dev-server": "^3.1.14"

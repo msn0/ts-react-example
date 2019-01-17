@@ -7,13 +7,13 @@ import BadgePure from './components/badge-pure-ts/badge-pure';
 render((
     <React.Fragment>
         <p>
-            <BadgeFunctionalTs num={135} />
+            <BadgeFunctionalTs num={ 135 } />
         </p>
         <p>
-            <BadgeFunctionalJs num={2} />
+            <BadgeFunctionalJs num={ 2 } />
         </p>
         <p>
-            <BadgePure num={1} />
+            <BadgePure num={ 1 } />
         </p>
     </React.Fragment>
 ), document.body);
