@@ -1,5 +1,7 @@
 # ts-react-example
 
+React components written in TypeScript. An intentional mix of good old javascript with TypeScript with unit and visual regression tests.
+
 ## What's included?
 
 * TypeScript mixed with javascript (ES6)
