@@ -16,7 +16,8 @@ module.exports = {
         {
             name: 'some messages',
             props: {
-                num: 2
+                num: 2,
+                backgroundColor: 'tomato'
             }
         }
     ]
